@@ -6,7 +6,6 @@
 }
 
 body {
-    display: none;
     height: 100vh;
     background-color: rgb(20, 20, 20);
     background-image: url('https://storage.googleapis.com/bukas-website-v3-prd/website_v3/images/Bukas_Courses_For_ABM_Strand.original.png');
