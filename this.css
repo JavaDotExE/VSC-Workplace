@@ -142,7 +142,7 @@ section#page {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    bottom: 70px;
+    bottom: 200px;
     position: relative;
 }
 
@@ -199,7 +199,7 @@ h1.abm-title {
 
     100% {
         opacity: 1;
-        bottom: -1px;
+        bottom: 10px;
     }
 }
 
