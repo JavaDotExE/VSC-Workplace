@@ -148,7 +148,7 @@ section#page {
 
 /*DESCRIPTION*/
 
-section#description {
+section.description {
     top: 30px;
     position: relative;
     height: 100vh;
