@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(47, 45, 45);
     background-image: url('https://storage.googleapis.com/bukas-website-v3-prd/website_v3/images/Bukas_Courses_For_ABM_Strand.original.png');
     background-size: cover;
     background-position: center;
@@ -146,9 +146,13 @@ section#page {
     position: relative;
 }
 
+.nav_btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 /*DESCRIPTION*/
 
-section.description {
+section#description {
     top: 30px;
     position: relative;
     height: 100vh;
@@ -161,18 +165,15 @@ section.description {
     font-size: 30px;
 }
 
-h1.abm-title {
+h1#abm-title {
     width: 100%;
     position: relative;
     max-width: 1200px;
-    margin: 0 500px auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.nav_btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 700px;
 }
 
 /*RESPONSIVE DESIGN*/
