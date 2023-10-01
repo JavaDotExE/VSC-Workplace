@@ -177,7 +177,7 @@ section#description {
     align-items: baseline;
 }
 
-h1#abm-title {
+#abm-title {
     width: 100%;
     position: relative;
     max-width: 1200px;
@@ -200,16 +200,16 @@ h1#abm-title {
     border-width: 3px;
     box-shadow: 10px 5px;
     gap: 3px;
-    margin-left: 900px;
+    margin-left: 1100px;
     margin-right: 120px;
 }
 
 #descp1 {
-    margin-top: 200px;
+    margin-top: 10px;
 }
 
 #descp2 {
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
 .hidden {
@@ -286,25 +286,10 @@ h1#abm-title {
         opacity: 0;
         top: 80px;
         font-size: 100px;
-        #descp1 #descp2 {
-            opacity: 0;
-        }
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    60% {
-        #descp1 {
-            opacity: 1;
-        }
     }
 
     100% {
-        #descp2 {
-            opacity: 1;
-        }
+        opacity: 1;
     }
 }
 
@@ -318,20 +303,24 @@ h1#abm-title {
 @keyframes p1animin {
     0% {
         transform: translateY(200px);
+        opacity: 0;
     }
 
     100% {
         transform: translateY(0px);
+        opacity: 1;
     }
 }
 
 @keyframes p2animin {
     0% {
         transform: translateY(200px);
+        opacity: 0;
     }
 
     100% {
         transform: translateY(0px);
+        opacity: 1;
     }
 }
 
