@@ -11,3 +11,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}

@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -29,14 +30,14 @@ body {
     display: flex;
     position: relative;
     rotate: 180deg;
-    bottom: 440px;
+    bottom: 400px;
     margin-left: 50px;
 }
 
 #next1 {
     display: flex;
     position: relative;
-    bottom: 440px;
+    bottom: 400px;
     margin-left: 1300px;
 }
 
@@ -188,7 +189,7 @@ section#page {
 }
 
 .s2 {
-    padding-top: 200px;
+    padding-top: 210px;
     top: 40px;
 }
 
@@ -258,6 +259,13 @@ section#description {
     width: auto;
 }
 
+/* vid */
+
+#vid {
+    margin-top: 200px;
+    height: 100vh;
+}
+
 
 /* Animation Text */
 
@@ -309,22 +317,6 @@ section#description {
         animation: img2in 7s;
         animation-delay: 200ms;
     }
-}
-
-/* Description 2 */
-
-#description2 {
-    top: 500px;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    align-items: baseline;
 }
 
 #back2 {
