@@ -5,6 +5,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     background-color: #0D85D8;
@@ -12,8 +16,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: visible;
-    scroll-behavior: smooth;
 }
 
 #buttons, #buttons2 {
@@ -46,11 +48,17 @@ body {
     margin-left: 1300px;
 }
 
+.btn2 {
+    width: fit-content;
+    height: fit-content;
+}
+
 #back2 {
     display: flex;
     position: relative;
     rotate: 180deg;
     margin-left: 50px;
+    min-width: max-content;
 }
 
 #next2 {
@@ -284,8 +292,14 @@ section#description {
 
 /* vid */
 
+.s3 {
+    margin-top: 100px;
+    justify-self: center;
+    justify-content: center;
+}
+
 #vid {
-    top: 45px;
+    top: 125px;
     position: relative;
     height: 140vh;
     display: flex;
@@ -298,11 +312,6 @@ section#description {
     align-items: baseline;
 }
 
-#back2, #next2 {
-    position: relative;
-    top: -570px;
-}
-
 #abm-title2 {
     width: 100%;
     position: relative;
@@ -313,7 +322,6 @@ section#description {
     justify-content: center;
     height: max-content;
     align-items: flex-start;
-    top: -550px;
     border-style: solid;
     border-color: white;
     border-radius: 30px;
