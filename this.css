@@ -12,8 +12,22 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: visible;
+    overflow: hidden;
     scroll-behavior: smooth;
+}
+
+#buttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 140px;
+}
+
+/* Buttons */
+
+#back1 {
+    display: block  ;
 }
 
 body::-webkit-scrollbar{
@@ -163,6 +177,11 @@ section#page {
     font-size: 70px;
 }
 
+.s2 {
+    padding-top: 200px;
+    top: 20px;
+}
+
 section#description {
     top: 200px;
     position: relative;
@@ -187,7 +206,7 @@ section#description {
     justify-content: center;
     height: max-content;
     align-items: flex-start;
-    top: -110px;
+    top: -150px;
     border-style: solid;
     border-color: white;
     border-radius: 30px;
@@ -197,6 +216,7 @@ section#description {
     position: inherit;
     border: #fff;
     border-style: solid;
+    border-radius: 10px;
     border-width: 3px;
     box-shadow: 10px 5px;
     gap: 3px;
@@ -211,6 +231,25 @@ section#description {
 #descp2 {
     margin-top: 150px;
 }
+
+#img1 {
+    position: absolute;
+    height: 450px;
+    left: 25rem;
+    top: 300px;
+    width: auto;
+}
+
+#img2 {
+    position: absolute;
+    height: 450px;
+    left: 5rem;
+    top: 590px;
+    width: auto;
+}
+
+
+/* Animation Text */
 
 .hidden {
     opacity: 0;
@@ -244,13 +283,38 @@ section#description {
     }
     #descp1 {
         animation: p1animin 5s;
-        animation-delay: 100ms;
+        animation-delay: 80ms;
     }
 
     #descp2 {
-        animation: p2animin 5s;
+        animation: p2animin 7s;
+        animation-delay: 150ms;
+    }
+    #img1 {
+        animation: img1in 5s;
+        animation-delay: 130ms;
+    }
+
+    #img2 {
+        animation: img2in 7s;
         animation-delay: 200ms;
     }
+}
+
+/* Description 2 */
+
+#description2 {
+    top: 500px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    align-items: baseline;
 }
 
 /*RESPONSIVE DESIGN*/
@@ -330,3 +394,26 @@ section#description {
     }    
 }
 
+@keyframes img1in {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes img2in {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
