@@ -12,7 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: scroll;
+    overflow: clip;
     scroll-behavior: smooth;
 }
 
@@ -180,7 +180,6 @@ h1#abm-title {
     justify-content: center;
     height: max-content;
     align-items: flex-start;
-    animation: h1animin 8s;
     top: -310px;
     border-style: solid;
     border-color: white;
@@ -205,7 +204,7 @@ h1#abm-title {
     .navbar .toggle_btn{
         display: block;
     }
-
+    
     .dropdown_menu {
         display: block;
     }
@@ -259,13 +258,39 @@ h1#abm-title {
 
 .hidden {
     opacity: 0;
+    filter: blur(10px);
+    transition: all 1s;
+}
+
+.hidden.s1 {
+    transform: translateY(-50px);
     transition: all 2s;
 }
 
-.show {
+.show.s1 {
+    transform: translateY(0px);
     opacity: 1;
+    filter: blur(0px);
 }
 
-#page.show {
-    
+.hidden.s2 {
+    transform: translateY(370px);
+    transition: all 1s;
 }
+
+.show.s2 {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+    #abm-title {
+        animation: h1animin 8s;
+    }
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }    
+}
+
