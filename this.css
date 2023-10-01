@@ -12,7 +12,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -27,7 +26,18 @@ body {
 /* Buttons */
 
 #back1 {
-    display: block  ;
+    display: flex;
+    position: relative;
+    rotate: 180deg;
+    bottom: 440px;
+    margin-left: 50px;
+}
+
+#next1 {
+    display: flex;
+    position: relative;
+    bottom: 440px;
+    margin-left: 1300px;
 }
 
 body::-webkit-scrollbar{
@@ -179,7 +189,7 @@ section#page {
 
 .s2 {
     padding-top: 200px;
-    top: 20px;
+    top: 40px;
 }
 
 section#description {
@@ -315,6 +325,21 @@ section#description {
     color: #fff;
     font-size: 30px;
     align-items: baseline;
+}
+
+#back2 {
+    display: flex;
+    position: relative;
+    rotate: 180deg;
+    bottom: 400px;
+    margin-left: 50px;
+}
+
+#next2 {
+    display: flex;
+    position: relative;
+    bottom: 400px;
+    margin-left: 1300px;
 }
 
 /*RESPONSIVE DESIGN*/
