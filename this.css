@@ -12,11 +12,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: clip;
+    overflow: visible;
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar{
     display: none;
 }
 
@@ -39,6 +39,13 @@ a:hover{
 header {
     position: relative;
     padding: 0 2rem;
+}
+
+#logo {
+    position: sticky;
+    display: flex;
+    max-height: 50px;
+    top: 0;
 }
 
 .navbar{
