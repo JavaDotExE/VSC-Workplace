@@ -7,16 +7,16 @@
 
 body {
     height: 100vh;
-    background-color: rgb(47, 45, 45);
+    background-color: #0D85D8;
     background-image: url('https://storage.googleapis.com/bukas-website-v3-prd/website_v3/images/Bukas_Courses_For_ABM_Strand.original.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow: visible;
     scroll-behavior: smooth;
 }
 
-#buttons {
+#buttons, #buttons2 {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -30,14 +30,32 @@ body {
     display: flex;
     position: relative;
     rotate: 180deg;
-    bottom: 400px;
+    bottom: 560px;
     margin-left: 50px;
+}
+
+.h1 {
+    position: relative;
+    bottom: 140px;
 }
 
 #next1 {
     display: flex;
     position: relative;
-    bottom: 400px;
+    bottom: 560px;
+    margin-left: 1300px;
+}
+
+#back2 {
+    display: flex;
+    position: relative;
+    rotate: 180deg;
+    margin-left: 50px;
+}
+
+#next2 {
+    display: flex;
+    position: relative;
     margin-left: 1300px;
 }
 
@@ -76,7 +94,7 @@ header {
 .navbar{
     width: 100%;
     height: 70px;
-    max-width: 1800px;
+    max-width: 1600px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -88,6 +106,11 @@ header {
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.navword {
+    font-family: 'Roboto Slab';
+    font-size: 30px;
 }
 
 .navbar .links {
@@ -194,9 +217,9 @@ section#page {
 }
 
 section#description {
-    top: 200px;
+    top: 15px;
     position: relative;
-    height: 100vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -217,7 +240,7 @@ section#description {
     justify-content: center;
     height: max-content;
     align-items: flex-start;
-    top: -150px;
+    top: -330px;
     border-style: solid;
     border-color: white;
     border-radius: 30px;
@@ -247,7 +270,7 @@ section#description {
     position: absolute;
     height: 450px;
     left: 25rem;
-    top: 300px;
+    top: 350px;
     width: auto;
 }
 
@@ -255,15 +278,45 @@ section#description {
     position: absolute;
     height: 450px;
     left: 5rem;
-    top: 590px;
+    top: 620px;
     width: auto;
 }
 
 /* vid */
 
 #vid {
-    margin-top: 200px;
-    height: 100vh;
+    top: 45px;
+    position: relative;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    align-items: baseline;
+}
+
+#back2, #next2 {
+    position: relative;
+    top: -570px;
+}
+
+#abm-title2 {
+    width: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    align-items: flex-start;
+    top: -550px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
 }
 
 
@@ -289,12 +342,14 @@ section#description {
 .hidden.s2 {
     transform: translateY(110px);
     transition: all 2s;
+    background-color: #0D85D8;
 }
 
 .show.s2 {
     transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
+    background-color: rgb(47, 45, 45);
     #abm-title {
         animation-delay: 50ms;
         animation: h1animin 4s;
@@ -319,19 +374,14 @@ section#description {
     }
 }
 
-#back2 {
-    display: flex;
-    position: relative;
-    rotate: 180deg;
-    bottom: 400px;
-    margin-left: 50px;
+.hidden.s3 {
+    transition: all 5s;
 }
 
-#next2 {
-    display: flex;
-    position: relative;
-    bottom: 400px;
-    margin-left: 1300px;
+.show.s3 {
+    transform: translateY(130px);
+    opacity: 1;
+    filter: blur(0px);
 }
 
 /*RESPONSIVE DESIGN*/
