@@ -240,18 +240,21 @@ section#description {
 
 #abm-title {
     width: 100%;
-    position: relative;
+    position: sticky;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     height: max-content;
-    align-items: flex-start;
-    top: 330px;
+    top: 0px;
+    background-color:rgba(69, 63, 63, 1);
     border-style: solid;
     border-color: white;
+    margin-bottom: -170px;
     border-radius: 30px;
+    z-index: 200;
 }
 
 .descp1h1 {
