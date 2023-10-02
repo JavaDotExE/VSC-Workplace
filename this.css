@@ -4,10 +4,10 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
+/*
 html {
     scroll-behavior: smooth;
-}
+} */
 
 body {
     height: 100vh;
@@ -51,6 +51,7 @@ body {
 .btn2 {
     width: fit-content;
     height: fit-content;
+    margin-top: -700px;
 }
 
 #back2 {
@@ -325,6 +326,7 @@ section#description {
     border-style: solid;
     border-color: white;
     border-radius: 30px;
+    margin-top: -1200px ;
 }
 
 
@@ -333,7 +335,6 @@ section#description {
 .hidden {
     opacity: 0;
     filter: blur(10px);
-    transition: all 1s;
 }
 
 .hidden.s1 {
@@ -491,4 +492,11 @@ section#description {
         transform: translateX(0px);
         opacity: 1;
     }
+}
+
+#abm-title {
+    display: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 200;
 }
