@@ -15,6 +15,10 @@ cards.forEach(card => {
     observer.observe(card)
 })
 
+window.onbeforeunload = function () {
+    window.scrollTo(top)
+}
+
 function openPage(pageName, elmnt) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

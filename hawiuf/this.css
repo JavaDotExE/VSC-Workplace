@@ -26,12 +26,14 @@ body::-webkit-scrollbar {
 
 /* Scrolling Span */
 
-#span1 {
-    overflow-x: hidden;
-}
-
 #home {
     height: 100%;
+}
+
+.homesect {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #bgimg {
@@ -118,12 +120,16 @@ a:hover {
 
 #p3 {
     position: relative;
-    top: 590px;
+    top: 160px;
+    margin-left: 70px; 
+    margin-right: 70px;
 }
 
 #p4 {
-   position: relative;
-   top: 100px; 
+    position: relative;
+    top: 140px;
+    margin-left: 70px; 
+    margin-right: 70px;
 }
 
 /* Images */
