@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Signika&family=Young+Serif&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Signika&display=swap" rel="stylesheet">
+    <!-- Scripts -->
     <link rel="stylesheet" href="this.css" />
     <script defer src="web.js"></script>
     <title>Accountancy, Business and Management</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Signika&display=swap" rel="stylesheet">
 </head>
 <body>
     <span class="navbar">
@@ -23,14 +27,15 @@
         </ul>
         <a href="#page" class="action_btn">Get Started</a>
     </span>
+    <div class="progress"></div>
     <span id="Home" class="tabcontent">
-        <img src="https://storage.googleapis.com/bukas-website-v3-prd/website_v3/images/Bukas_Courses_For_ABM_Strand.original.png" id="bgimg" />
         <section id="homesect">
+            <img src="https://storage.googleapis.com/bukas-website-v3-prd/website_v3/images/Bukas_Courses_For_ABM_Strand.original.png" id="bgimg" />
             <h1 class="abm-title hiddencard card card1" id="h1-abm"> Accountancy, Business <br> and Management</h1>
         </section>
     </span>
-    <div id="Description" class="tabcontent">
-        <section id="firstsect">
+    <div id="Description" class="tabcontent scrollcontainer">
+        <section id="firstsect" class="cards">
             <div class="scroll-snap1">
                 <img src="https://static.vecteezy.com/system/resources/previews/013/743/338/original/bar-graph-growth-and-up-arrow-png.png" id="graph-bg">
                 <p class="hiddencard card card2 abmdesc1">
@@ -39,7 +44,7 @@
                 <img src="https://www.onlineshs.com/wp-content/uploads/2020/02/shutterstock_516517936_compressed-1024x684.jpg" id="img2" class="hiddenimg card card2 imgs">
             </div>
         </section>
-        <section class="secondsect">
+        <section class="secondsect cards">
             <div class="scroll-snap2">
                 <p class="hiddencard card card3 abmdesc1">
                     The <b><u>ABM strand</u></b> curriculum was constructed to shape senior high school students that want to forge
@@ -49,42 +54,44 @@
             </div>
         </section>
         <section>
-            <div class="scroll-snap3">
-                <p id="p3" class="hiddencard card card4 abmdesc1">
-                    Pros of Choosing ABM Strand:
-                    <br>
-                    <br>
-                    Business and Financial Literacy: ABM provides a strong foundation in business and financial concepts, which can be valuable for future career opportunities and personal finance management.
-                    <br>
-                    <br>
-                    <br>
-                    Preparation for Business Courses: If you plan to pursue a degree in business, accounting, finance, or related fields, ABM can give you a head start by introducing you to key concepts and skills.
-                </p>
+            <div class="scroll-snap3 cards">
+                <span id="p3" class="hiddencard card card4 abmpros">
+                    <p class="pros">Pros of Choosing ABM Strand:</p>
+                    <p class="bullet pros">
+                    Business and Financial Literacy: <b>ABM</b> provides a strong foundation in <u>business and financial concepts</u>, which can be valuable for <u>future career opportunities and personal finance management.</u>
+                    </p>
+                    <p class="bullet pros">
+                    Preparation for Business Courses: If you plan to pursue a degree in business, accounting, finance, or related fields, ABM can give you a head start by introducing you to key concepts and skills. </p>
+                    </span>
                 <img src="" id="img4" class="hiddenimg card card4 imgs">
             </div>
         </section>
         <section>
-            <div class="scroll-snap4">
-            <p id="p4" class="hiddencard card card5 abmdesc1">
-                Entrepreneurial Skills: ABM often includes entrepreneurship subjects, helping students develop the skills and mindset
-                needed to start and manage their own businesses.
-                <br>
-                <br>
-                Wide Range of Career Options: ABM opens doors to various career paths, including business management, finance,
-                marketing, human resources, and more.
-                <br>
-                <br>
-                Problem-Solving Skills: It fosters critical thinking and problem-solving abilities, which are valuable in various
-                professions and daily life.
-            </p>
+            <div class="scroll-snap4 cards">
+            <span id="p4" class="hiddencard card card5 abmpros">
+                <p class="bullet pros">Entrepreneurial Skills: <b>ABM</b> often includes entrepreneurship subjects, helping students develop the skills and mindset needed to <u>start and manage their own businesses.</u></p>
+                <p class="bullet pros">Wide Range of Career Options: <b>ABM</b> opens doors to various career paths, including <u>business management</u>, <u>finance</u>, <u>marketing</u>, <u>human resources</u>, and more.</p>
+                <p class="bullet pros">Problem-Solving Skills: It fosters critical thinking and problem-solving abilities, which are valuable in various professions and daily life.</p>
+            </span>
             <img src="" id="img5" class="hiddenimg card card5 imgs">
             </div>
         </section>
+        <section>
+            <div class="scroll-snap5 cards">
+            <span id="p6" class="hiddencard card card6 abmdesc1">
+                <p class="bullet">Entrepreneurial Skills:  <b>ABM</b> often includes entrepreneurship subjects, helping students develop the skills and mindset needed to <u>start and manage their own businesses.</u></p>
+                <p class="bullet">Wide Range of Career Options:  <b>ABM</b> opens doors to various career paths, including <u>business management</u>, <u>finance</u>, <u>marketing</u>, <u>human resources</u>, and more.</p>
+                <p class="bullet">Problem-Solving Skills:  It fosters critical thinking and problem-solving abilities, which are valuable in various professions and daily life.</p>
+            </span>
+            <img src="" id="img6" class="hiddenimg card card6 imgs">
+            </div>
+        </section>
         </div>
-        <div id="Interview" class="tabcontent">
+        <div id="Interview" class="tabcontent cards">
             
         </div>
 
             <p class="lastitem">.</p>
+    </div>
     </body>
 </html>

@@ -16,7 +16,7 @@ cards.forEach(card => {
 })
 
 window.onbeforeunload = function () {
-    window.scrollTo(top)
+    window.scrollTo(0, 0);
 }
 
 function openPage(pageName, elmnt) {
@@ -35,3 +35,7 @@ function openPage(pageName, elmnt) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+window.addEventListener('scroll', () => {
+    document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
+}, false);
