@@ -26,10 +26,6 @@ body::-webkit-scrollbar {
 
 /* Scrolling Span */
 
-#home {
-    height: 100%;
-}
-
 .homesect {
     align-content: center;
     justify-content: center;
