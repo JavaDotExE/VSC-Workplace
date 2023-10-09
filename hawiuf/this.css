@@ -11,9 +11,10 @@ body {
     background-color: #2e6891;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    height: 0;
+    height: 100vh;
     width: 100vw;
     transition: height 0.66s ease-out;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -26,24 +27,31 @@ body::-webkit-scrollbar {
 
 /* Scrolling Span */
 
-#span1 {
-    overflow-x: hidden;
-}
-
-#home {
-    height: 100%;
+.homesect {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #bgimg {
     position: absolute;
-    height: 140%;
-    width: 120%;
-    margin: 0;
+    height: auto;
+    width: 105%;
     margin-top: -100px;
     left: -90px;
 }
 
 /* Navigation Bar */
+
+.progress {
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: progress 1s linear;
+}
 
 .navbar .logo a {
     font-size: 1.5rem;
@@ -54,6 +62,16 @@ body::-webkit-scrollbar {
     display: flex;
     max-height: 50px;
     top: 0;
+}
+
+.scrollcontainer {
+    height: 100%;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scrollcontainer::-webkit-scrollbar {
+    display: none;
 }
 
 .action_btn {
@@ -111,20 +129,35 @@ a:hover {
     color: orange;
 }
 #h1-abm {
-    top: 38%;
+    position: absolute;
+    top: 28%;
+    left: 16%;
 }
 
 /* Text Paragraphs */
 
 #p3 {
     position: relative;
-    top: 590px;
-    left: -1000px;
+    top: 160px;
+    margin-left: 70px; 
+    margin-right: 70px;
+}
+
+.pros {
+    font-family: "Young Serif", sans-serif;
 }
 
 #p4 {
-   position: relative;
-   top: 100px; 
+    position: relative;
+    top: 140px;
+    margin-left: 70px; 
+    margin-right: 70px;
+}
+
+.bullet {
+    margin-left: 45px;
+    display: list-item;
+    list-style: disc outside none;
 }
 
 /* Images */
@@ -135,7 +168,7 @@ a:hover {
 
 #img3 {
     top: 420px;
-    margin-left: 670px;
+    margin-left: 280px;
     width: 1200px;
     height: auto;
     z-index: 4;
@@ -169,7 +202,17 @@ a:hover {
     opacity: 0;
 }
 
-.card {
+.imgs.card {
+    transform: translateX(-800px);
+    transition: all 2s;
+    display: block;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.hiddencard.card {
     transform: translateY(-50px);
     transition: all 2s;
     display: block;
@@ -179,31 +222,31 @@ a:hover {
     text-align: center;
 }
 
-.show.card1 {
+.show.abm-title.card1 {
     transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
 }
 
-.show.card2 {
+.show.abmdesc1.card2 {
     transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
 }
 
-.show.card3 {
+.show.abmdesc1.card3 {
     transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
 }
 
-.show.card4 {
+.show.abmpros.card4 {
     transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
 }
 
-.show.card5 {
+.show.abmpros.card5 {
     transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
@@ -211,7 +254,7 @@ a:hover {
 
 /* Sections */
 
-section {
+.cards {
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
@@ -243,6 +286,24 @@ section {
     margin-right: 120px;
 }
 
+.abmpros {
+    font-size: 45px;
+    margin-top: 600px;
+    position: absolute;
+    border: #fff;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 3px;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    box-shadow: 10px 5px;
+    gap: 3px;
+    margin-left: 1100px;
+    margin-right: 120px;
+}
+
 /* backgrounds */
 
 #graph-bg {
@@ -254,27 +315,27 @@ section {
     opacity: .3;
 }
 
-/* Cards */
+/* Text Cards */
 
-.card2 {
+.abmdesc1.card2 {
     position: relative;
     top: 320px;
 }
 
-.card3 {
+.abmdesc1.card3 {
     position: relative;
     left: -300px;
     top: 670px;
     margin-left: 750px;
 }
 
-.card4 {
+.abmpros.card4 {
     position: relative;
     top: 580px;
     margin-left: 1100px;
 }
 
-.card5 {
+.abmpros.card5 {
     position: absolute;
     margin-top: 200px;
     margin-left: 40px;
@@ -283,6 +344,34 @@ section {
 
 .lastitem {
     position: relative;
+}
+
+/* Image Cards */
+
+.imgs.show.card2 {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+.imgs.show.card3 {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+.imgs.show.card4 {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+.imgs.show.card5 {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+.imgs.show.card6 {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
 }
 
 
