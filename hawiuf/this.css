@@ -160,6 +160,10 @@ a:hover {
     margin-right: 70px;
 }
 
+.scroll-snap4 {
+    height: 200vh;
+}
+
 .bullet {
     margin-left: 45px;
     display: list-item;
@@ -410,7 +414,7 @@ div {
 }
 
 .conscont {
-    
+    padding-bottom: 80px;
 }
 
 /* Image Cards */
