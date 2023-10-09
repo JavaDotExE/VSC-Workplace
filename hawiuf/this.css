@@ -147,6 +147,10 @@ a:hover {
     font-family: "Young Serif", sans-serif;
 }
 
+.cons {
+    font-family: "Young Serif", sans-serif;
+}
+
 #p4 {
     position: relative;
     top: 20px;
@@ -260,11 +264,17 @@ a:hover {
     filter: blur(0px);
 }
 
+.show.abmcons.card7 {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+
 /* Sections */
 
 .horizontal-scroll-wrapper {
     width: 100vw;
-    max-height: 100vh;
+    height: 100vh;
     padding-bottom: 100px;
     margin: 0;
     background-color: transparent;
@@ -325,7 +335,7 @@ div {
     margin-right: 120px;
 }
 
-.abmpros {
+.abmpros, .abmcons{
     font-size: 45px;
     margin-top: 600px;
     position: absolute;
@@ -381,8 +391,26 @@ div {
     margin-right: 1000px;
 }
 
+.abmcons.card6 {
+    position: relative;
+    margin-top: 140px;
+    margin-left: 80px;
+    margin-right: 60px;
+}
+
+.abmcons.card7 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 80px;
+    margin-right: 60px;
+}
+
 .lastitem {
     position: relative;
+}
+
+.conscont {
+    
 }
 
 /* Image Cards */
@@ -407,12 +435,6 @@ div {
     opacity: 1;
     filter: blur(0px);
 }
-.imgs.show.card6 {
-    transform: translateX(0px);
-    opacity: 1;
-    filter: blur(0px);
-}
-
 
 /* Comments
 
