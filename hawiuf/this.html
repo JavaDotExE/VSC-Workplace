@@ -25,17 +25,16 @@
                 <div class="dropdown">
                     <button class="dropbtn">Description</button>
                     <div class="dropdown-content">
-                        <a href="#abtABM" id="des" class="navword tablink desc" onclick="openPage('abtABM',this)">About ABM strand</a> 
-                        <a href="#AdvDisadv" id="des2" class="navword tablink desc" onclick="openPage('AdvDisadv',this)">About ABM strand</a>
+                        <a href="#abtABM" id="des" class="navword tablink desc click" onclick="openPage('abtABM',this)">About ABM strand</a> 
+                        <a href="#AdvDisadv" id="des2" class="navword tablink desc click" onclick="openPage('AdvDisadv',this)">Advantages and Disadvantages</a>
                     </div>
                 </div>
             </li>
             <li class="nav_btn descbtn"><a href="#vids" class="navword tablink" onclick="openPage('Interview',this)">Interview</a></li>
-            <li class="nav_btn"><a href="#ab" class="navword tablink" onclick="openPage('About',this)">About</a></li>
+            <li class="nav_btn"><a href="#ab" class="navword tablink" onclick="openPage('ab',this)">About</a></li>
         </ul>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAtU5mrPnUzCFU3kdjk47S6vSJipfeJJS4x5i_HhahRseglQ/viewform" class="action_btn">Enroll Now</a>
     </span>
-    <div class="progress"></div>
     <span id="Home" class="tabcontent">
         <section id="homesect">
             <img src="https://storage.googleapis.com/bukas-website-v3-prd/website_v3/images/Bukas_Courses_For_ABM_Strand.original.png" id="bgimg" />
@@ -65,7 +64,7 @@
         </div>
     </div>
     <div id="AdvDisadv" class="tabcontent scrollcontainer">
-        <section>
+        <section id="sect1">
             <div class="scroll-snap3 cards">
                 <div id="scrollcont2" class="horizontal-scroll-wrapper">
                     <span id="p3" class="hiddencard card card4 abmpros">
@@ -88,9 +87,9 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="scroll-snap4 cards">
-                <div id="scrollcont2" class="horizontal-scroll-wrapper conscont">
+        <section id="sect2">
+            <div id="scsnap4" class="scroll-snap4 cards">
+                <div id="scrollcont3" class="horizontal-scroll-wrapper conscont">
                     <span id="p5" class="hiddencard card card6 abmcons">
                         <p id="constitle" class="cons">Cons of Choosing ABM Strand:</p>
                             <div class="left cons-content">
@@ -112,18 +111,46 @@
                             </p>
                         </div>
                     </span>
+                    <br><br><br><br><br><br><br><br><br>
                 </div>
             </div>
-        </section>
-        </div>
-        
+        </section>    
+    </div>
         <div id="Interview" class="tabcontent cards">
             <video id="vidG12" width="900" height="auto" controls>
                 <source src=".\ICT interview ABM.mp4" type="video/mp4">
             </video>
+            <p id="g12" class="gradelvl">
+                Grade 12 - Humility
+            </p>
+            <p id="g11" class="gradelvl">
+                Grade 11 - 
+            </p>
         </div>
 
-            <p class="lastitem">.</p>
+    <div id="ab" class="tabcontent">
+        <section id="goals">
+
+        </section>
+        <section id="members">
+            <p id="memtitle" class="memtit">Members</p>
+            <div id="memcont">
+                <p id="mem1" class="mem">
+                    Yuji Kyle Derez
+                </p>
+                <p id="mem2" class="mem">
+                    Godfrey Q. Burgos Jr.
+                </p>
+                <p id="mem3" class="mem">
+                    Khalil Cali
+                </p>
+                <p id="mem4" class="mem">
+                    Shaun Molina
+                </p>
+            </div>
+        </section>
     </div>
+
+            <p class="lastitem">.</p>
     </body>
 </html>
