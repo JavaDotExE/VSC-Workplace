@@ -39,7 +39,11 @@ window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
 }, false);
 
+document.getElementById("des2").addEventListener("click", () => {
+    document.getElementById("abtABM").scrollTo(top);
+})
+
 document.getElementById("des").addEventListener("click", () => {
-    document.getElementById("scrollcont").scrollTo(top);
-    document.getElementById("scrollcont2").scrollTo(top);
+    document.getElementById("scrollcont").scrollTo(top);   
+    document.getElementById("scrollcont2").scrollTo(top);   
 })
