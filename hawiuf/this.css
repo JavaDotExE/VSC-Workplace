@@ -124,21 +124,21 @@ body::-webkit-scrollbar {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: transparent;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgb(246, 242, 242);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #4b4747;
 }
 
 .dropdown:hover .dropdown-content {
@@ -314,6 +314,11 @@ a:hover {
     overflow-x: hidden;
     transform: translateY(0px);
     transform-origin: right top;
+}
+
+.vertical-scroll-ab {
+    overflow-y: visible;
+    overflow-x: hidden;
 }
 
 .horizontal-scroll-wrapper::-webkit-scrollbar {
@@ -556,6 +561,14 @@ div {
 
 #mem4 {
     left: 1600px;
+}
+
+/* Text */
+
+.vertical-scroll-ab {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px;
+    color: #fff;
 }
 
 

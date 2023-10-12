@@ -44,3 +44,7 @@ document.getElementsByClassName("click").addEventListener("click", () => {
     document.getElementById("scrollcont2").scrollTo(0, 0);
     document.getElementById("scrollcont3").scrollTo(0, 0);
 });
+
+const abscroll = document.getElementById("ab")
+
+abscroll.scrollIntoView(true);
