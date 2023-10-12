@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    user-select: none;
     background-color: #2e6891;
     scroll-behavior: smooth;
     height: 100vh;
@@ -128,6 +129,7 @@ body::-webkit-scrollbar {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    text-align: center;
 }
 
 .dropdown-content a {
@@ -159,7 +161,7 @@ a:hover {
 #h1-abm {
     position: absolute;
     top: 28%;
-    left: 16%;
+    left: 13.9%;
 }
 
 /* Text Paragraphs */
@@ -451,11 +453,15 @@ div {
 }
 
 #des {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #des2 {
-    font-size: 14px;
+    font-size: 18px;
+}
+
+.desc {
+    justify-content: center;
 }
 
 /* Image Cards */
@@ -581,6 +587,10 @@ div {
 
 #goals {
     padding-top: 80px;
+}
+
+.ab {
+    font-size: 18px;
 }
 
 /* Comments
