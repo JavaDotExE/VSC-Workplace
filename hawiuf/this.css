@@ -441,11 +441,12 @@ div {
     position: absolute;
     margin-top: 160px;
     margin-left: 80px;
-    margin-right: 60px;
+    margin-right: 60px; 
 }
 
 .lastitem {
     position: relative;
+    padding-top: 200px;
 }
 
 .conscont {
@@ -570,7 +571,6 @@ div {
 .vertical-scroll-ab {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 40px;
-    color: #fff;
 }
 
 #vertical-scroll-ab, #ab {
@@ -585,8 +585,17 @@ div {
     padding-top: 80px;
 }
 
+.desc {
+    background-color: #2e6891;
+}
+
 .ab {
-    font-size: 18px;
+    font-size: 30px;
+}
+
+#ab {
+    color: #fff;
+    font-size: 60px;
 }
 
 /* Comments
