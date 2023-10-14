@@ -575,14 +575,6 @@ div {
     position: relative;
 }
 
-#goals {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-style: ridge;
-    border-width: 10px;
-}
-
 .desc {
     background-color: #2e6891;
 }
