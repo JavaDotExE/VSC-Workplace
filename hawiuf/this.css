@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 
 #bgimg {
     position: absolute;
-    height: auto;
+    height: 110%;
     width: 105%;
     margin-top: -100px;
     left: -90px;
@@ -92,8 +92,7 @@ body::-webkit-scrollbar {
 .navbar {
     width: 100%;
     height: 100px;
-    left: 160px;
-    max-width: 1600px;
+    max-width: 99%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -576,7 +575,11 @@ div {
 }
 
 #goals {
-    padding-top: 80px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: ridge;
+    border-width: 10px;
 }
 
 .desc {
