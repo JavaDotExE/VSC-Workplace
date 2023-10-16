@@ -30,21 +30,9 @@ function openPage(pageName, elmnt) {
         tablinks[i].style.backgroundColor = "";
     }
     document.getElementById(pageName).style.display = "block";
+    document.getElementById(pageName).scrollTo(top)
+    document.getElementById(scrollcont2).scrollTo(top)
+    document.getElementById(scrollcont3).scrollTo(top)
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
-window.addEventListener('scroll', () => {
-    document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
-}, false);
-
-document.getElementsByClassName("click").addEventListener("click", () => {
-    document.getElementById("scrollcont").scrollTo(0, 0);
-    document.getElementById("scrollcont2").scrollTo(0, 0);
-    document.getElementById("scrollcont3").scrollTo(0, 0);
-});
-
-const abscroll = document.getElementById("ab")
-
-abscroll.scrollIntoView(true);
