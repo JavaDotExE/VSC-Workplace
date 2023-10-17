@@ -487,9 +487,34 @@ div {
 
 /* Video */
 
+.g12vid {
+    position: absolute;
+    height: 55%;
+    width: auto;
+    margin-left: -49%;
+    margin-top: 20%;
+}
+
+.g11vid {
+    position: absolute;
+    height: 55%;
+    width: auto;
+    margin-top: 20%;
+    margin-left: 1%;
+}
+
+#g11 {
+    margin-left: 55%;
+}
+
+#g12 {
+    margin-left: 5%;
+}
+
 .gradelvl {
     position: absolute;
     margin: 0;
+    margin-top: 10%;
     font-family: 'Roboto Slab', sans-serif;
     font-size: 80px;
     color: azure;
@@ -502,9 +527,7 @@ div {
 
 /* Members */
 #memtitle {
-    margin-left: 39%;
-    margin-top: 600px;
-    position: absolute;
+    margin: 0 30%;
     font-family: 'Roboto Slab', sans-serif;
     font-size: 80px;
     color: azure;
@@ -517,7 +540,6 @@ div {
 }
 
 .mem {
-    margin-top: 800px;
     position: absolute;
     font-family: 'Roboto Slab', sans-serif;
     font-size: 20px;
@@ -575,9 +597,27 @@ div {
     font-size: 30px;
 }
 
+.aboutbox {
+    border: #fff solid 2px;
+    margin: 100px;
+}
+
+.aboutbox#members {
+    border: none;
+}
+
 #ab {
     color: #fff;
     font-size: 60px;
+}
+
+#memtitle {
+    margin-top: 13%;
+    margin-bottom: -14%;
+}
+
+#memcont {
+    margin-top: 15%;
 }
 
 /* Comments

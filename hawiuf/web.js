@@ -31,8 +31,6 @@ function openPage(pageName, elmnt) {
     }
     document.getElementById(pageName).style.display = "block";
     document.getElementById(pageName).scrollTo(top)
-    document.getElementById(scrollcont2).scrollTo(top)
-    document.getElementById(scrollcont3).scrollTo(top)
 }
 
 document.getElementById("defaultOpen").click();
