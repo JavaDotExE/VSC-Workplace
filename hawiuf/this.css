@@ -21,6 +21,15 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+#bclogo {
+    position: absolute;
+    z-index: 20;
+    height: 25%;
+    margin-left: 43%;
+    margin-top: 6%;
+    width: auto;
+}
+
 .tabcontent {
     display: none;
 }
@@ -264,6 +273,12 @@ a:hover {
     filter: blur(0px);
 }
 
+.show.abm-bclogo.card1 {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+
 .show.abmdesc1.card2 {
     transform: translateY(0px);
     opacity: 1;
@@ -300,6 +315,12 @@ a:hover {
     filter: blur(0px);
 }
 
+.show.aboutbox.card8, .show.aboutbox.card9, .show.aboutbox.card10, .show.aboutbox.card11, .show.aboutbox.card12 {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+
 /* Sections */
 .horizontal-scroll-wrapper {
     width: 100vw;
@@ -316,6 +337,10 @@ a:hover {
 .vertical-scroll-ab {
     overflow-y: visible;
     overflow-x: hidden;
+}
+
+.vertical-scroll-ab::-webkit-scrollbar {
+    display: none;
 }
 
 .horizontal-scroll-wrapper::-webkit-scrollbar {
@@ -565,7 +590,7 @@ div {
 }
 
 #mem4 {
-    left: 1600px;
+    left: 1500px;
 }
 
 #Interview {
@@ -577,6 +602,7 @@ div {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 40px;
     color: #fff;
+    height: 100vh;
 }
 
 #vertical-scroll-ab,
@@ -609,6 +635,7 @@ div {
 #ab {
     color: #fff;
     font-size: 60px;
+    overflow: hidden;
 }
 
 #memtitle {
